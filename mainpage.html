@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+ <html>
+<head>
+<title>Main Page</title>
+
+
+		<h1><a id ="JSON.html">JSON Asessment</a><h1>
+	    <h2><a id ="JSONManip"href="trainerpage">JSON Manipulation</a><br><br>
+		
+		
+		   <h1><a id ="FormAsessment">Form Assesment</a></h1>
+		   <h2><a id ="EntryFormLink"href="contactpage.html">Entry Form</a><br>
+		   <h4><a id ="formdetails"href="trainerpage.html">Form Details</a><br><br>
+		
+		
+		
+		<script> 
+		var Textbox;
+		var Textbox;
+        var Span;
+        var FS=10;   //font size//
+		function moving(){
+		Textbox = window.document.getElementById("textBox");
+		Span = window.document.getElementById("SP");
+		Span.style.top=window.event.clientY;
+		console.log(Span.style.top);
+		Span.style.left=window.event.clientX;
+		if (event.ctrlKey){ FS++;}
+		if (event.altKey){ FS--;}
+		Span.style.fontSize=FS;
+		 
+		 
+		
+		function mouseout(){
+	if(Textbox.value!="")	Span.innerHTML = Textbox.value;  //copy text box content onto mouse//
+	Span.style.backgroundColor = "yellow"; 
+}
+	
+	
+	
+	}
+		 {
+		 
+		
+		
+		
+
+	
+	
+</head>
+<body>
+
+<script></script>
+		
+
+ </body>
+</html> 
+
+

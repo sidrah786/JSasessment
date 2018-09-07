@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<body>
+<script> 
+
+
+function aFunction () { 
+
+	var element1 = document.getElementById("a1");
+	var element2 = document.getElementById("a2");
+	var element3 = document.getElementById("a3");
+	var element4 = document.getElementById("a4");
+	var element5 = document.getElementById("a5");
+	var alphaExp = /^[a-zA-Z]+$/;
+	var dob = /^\d{1,2}\/\d{1,2}\/\d{4}$/;
+	var address=/^[A-Za-z0-9- ]+$/;
+	var PostCode=/^[A-Za-z0-9- ]+$/;
+	var email = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,6}$/;
+
+	
+	if (element1.value == "" || !(element1.value.match(alphaExp))) { 
+	 
+	 document.getElementById("a1").focus ();
+	 alert ("Name is empty or incorrect format");
+	 return false;
+	 }
+	
+	
+	
+	if (element2.value == "" || !(element2.value.match(dob))) {
+	
+
+	 document.getElementById("a2").focus ();
+	 alert ("DOB is empty or incorrect format");
+	 return false;
+	 }
+	
+	
+	
+	if (element3.value == "" || !(element3.value.match(address))) {
+	
+
+	 document.getElementById("a3").focus ();
+	 alert ("Address is empty or incorrect format");
+	 return false;
+	 }
+	
+	
+	
+	if (element4.value == "" || !(element4.value.match(PostCode))) {
+	
+
+	 document.getElementById("a4").focus ();
+	 alert ("PostCode is empty or incorrect format");
+	 return false;
+	 }
+
+
+	
+
+	if (element5.value == "" || !(element5.value.match(email))) {
+	
+
+	 document.getElementById("a5").focus ();
+	 alert ("Email is empty or incorrect format");
+	 return false;
+	 }
+	
+	
+	
+	
+	
+	
+	}
+	
+	</script>
+<form onsubmit = "return aFunction ()" action = "success.html">
+
+Enter name<br>
+<input id = "a1"><br><br>
+
+Enter DOB<br>
+<input id = "a2"><br><br>
+
+
+Enter Address<br>
+<input id = "a3"><br><br>
+
+Enter PostCode<br>
+<input id = "a4"><br><br>
+
+
+Enter Email Address<br>
+<input id = "a5"><br><br>
+
+<input type = "Submit">
+
+</input>
+
+</form>
+</body>
+</html>
